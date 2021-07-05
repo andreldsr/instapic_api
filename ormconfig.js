@@ -1,6 +1,6 @@
 module.exports = {
    "type": "postgres",
-   "url": process.env.DATABASE_URL,
+   "url": process.env.DATABASE_URL + "&ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory",
    "logging": false,
    "entities": [
       //"src/entities/**/*.ts",
@@ -13,5 +13,11 @@ module.exports = {
    "cli": {
       "migrationsDir": "src/database/migrations",
       "entitiesDir": "src/entities"
+   },
+   "ssl": true,
+   "extra": {
+      "ssl": {
+         "rejectUnauthorized": false
+      }
    }
 }
