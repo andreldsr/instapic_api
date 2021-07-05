@@ -3,11 +3,11 @@ module.exports = {
    "url": process.env.DATABASE_URL,
    "logging": false,
    "entities": [
-      "src/entities/**/*.ts",
+      //"src/entities/**/*.ts",
       "dist/entities/**/*.js"
    ],
    "migrations": [
-      "src/database/migrations/**/*.ts",
+      //"src/database/migrations/**/*.ts",
       "dist/database/migrations/**/*.js"
    ],
    "cli": {

@@ -28,6 +28,8 @@ const photoUploadController = new PhotoUploadController()
 
 
 
+router.get("/", (_, res) => res.send("HELLO WORLD!"))
+
 router.post("/user/signup", createUserController.handle);
 router.post("/user/login", authenticationController.handle);
 
