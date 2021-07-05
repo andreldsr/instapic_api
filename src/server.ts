@@ -21,4 +21,4 @@ app.use((err: Error, request: Request, response: Response, next: NextFunction) =
     })
 })
 
-app.listen(process.env.port || 3000, () => console.log("Server started"))
+app.listen(process.env.PORT || 3000, () => console.log("Server started"))
