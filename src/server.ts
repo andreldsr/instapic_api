@@ -10,8 +10,8 @@ import cors from 'cors'
 const app = express();
 dotenv.config()
 app.use(express.json())
-app.use(router);
 app.use(cors(corsOptions))
+app.use(router);
 
 app.use(errorHandler)
 
